@@ -1,4 +1,4 @@
-local Targets = _G.Targets
+local Targets = _G.var_target
 
 local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
