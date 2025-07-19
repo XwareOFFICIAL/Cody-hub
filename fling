@@ -1,7 +1,5 @@
 local Targets = _G.var_target
 
-print(Targets)
-
 local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
 
@@ -220,6 +218,6 @@ for _,x in next, Targets do
             Message("Error Occurred", "This user is whitelisted! (Owner)", 5)
         end
     elseif not GetPlayer(x) and not AllBool then
-        Message("Error Occurred", "Username Invalid", 5)
+        Message("Error Occurred", "Username Invalid" .. Targets var, 5)
     end
 end
